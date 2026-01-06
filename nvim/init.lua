@@ -20,6 +20,7 @@ vim.g.maplocalleader = "\\"
 vim.o.number = true
 vim.o.list = true
 vim.o.listchars = "tab:▸ ,trail:·,precedes:◀,extends:▶,nbsp:␣"
+vim.o.wrap = false
 
 require("lazy").setup({
   spec = {
