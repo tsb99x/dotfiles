@@ -19,6 +19,22 @@ vim.g.maplocalleader = "\\"
 
 require("lazy").setup({
   spec = {
+    {
+      "nvim-treesitter/nvim-treesitter",
+      branch = "master",
+      lazy = false,
+      build = ":TSUpdate",
+      opts = {
+        highlight = { enable = true },
+        ensure_installed = {
+          "vimdoc",
+          "lua",
+        },
+      },
+      config = function(_, opts)
+        require("nvim-treesitter.configs").setup(opts)
+      end,
+    }
   },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
