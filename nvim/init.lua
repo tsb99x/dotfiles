@@ -52,7 +52,8 @@ require("lazy").setup({
       "nvim-lualine/lualine.nvim",
       dependencies = { "nvim-tree/nvim-web-devicons" },
       opts = {},
-    }
+    },
+    { "lewis6991/gitsigns.nvim" },
   },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
