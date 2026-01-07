@@ -39,7 +39,15 @@ require("lazy").setup({
       config = function(_, opts)
         require("nvim-treesitter.configs").setup(opts)
       end,
-    }
+    },
+    {
+      "catppuccin/nvim",
+      name = "catppuccin",
+      priority = 1000,
+      config = function()
+        vim.cmd.colorscheme "catppuccin-mocha"
+      end,
+    },
   },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
