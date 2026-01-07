@@ -77,6 +77,16 @@ require("lazy").setup({
         }
       }
     },
+    {
+      "neovim/nvim-lspconfig",
+      version = "2.5.0",
+      config = function()
+        local lspconfig = require("lspconfig")
+        lspconfig.basedpyright.setup({})
+        lspconfig.lua_ls.setup({})
+        lspconfig.clangd.setup({})
+      end,
+    },
   },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
