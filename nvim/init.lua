@@ -54,6 +54,17 @@ require("lazy").setup({
       opts = {},
     },
     { "lewis6991/gitsigns.nvim" },
+    {
+      "nvim-telescope/telescope.nvim",
+      tag = "v0.2.0",
+      dependencies = { "nvim-lua/plenary.nvim" },
+      keys = {
+        { "<leader>ff", "<Cmd>Telescope find_files<CR>", desc = "Telescope find files" },
+        { "<leader>fg", "<Cmd>Telescope live_grep<CR>", desc = "Telescope live grep" },
+        { "<leader>fb", "<Cmd>Telescope buffers<CR>", desc = "Telescope buffers" },
+        { "<leader>fh", "<Cmd>Telescope help_tags<CR>", desc = "Telescope help_tags" },
+      },
+    },
   },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
