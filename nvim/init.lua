@@ -65,6 +65,18 @@ require("lazy").setup({
         { "<leader>fh", "<Cmd>Telescope help_tags<CR>", desc = "Telescope help_tags" },
       },
     },
+    {
+      "mason-org/mason.nvim",
+      opts = {
+        ui = {
+          icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗",
+          }
+        }
+      }
+    },
   },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
