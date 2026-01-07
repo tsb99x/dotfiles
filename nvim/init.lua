@@ -48,6 +48,11 @@ require("lazy").setup({
         vim.cmd.colorscheme "catppuccin-mocha"
       end,
     },
+    {
+      "nvim-lualine/lualine.nvim",
+      dependencies = { "nvim-tree/nvim-web-devicons" },
+      opts = {},
+    }
   },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
