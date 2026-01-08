@@ -150,5 +150,5 @@ require("lazy").setup({
 		},
 	},
 	install = { colorscheme = { "habamax" } },
-	checker = { enabled = true },
+	checker = { enabled = false },
 })
