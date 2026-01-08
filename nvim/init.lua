@@ -23,6 +23,7 @@ vim.o.listchars = "tab:▸ ,trail:·,precedes:◀,extends:▶,nbsp:␣"
 vim.o.wrap = false
 vim.o.colorcolumn = "80"
 vim.o.ignorecase = true
+vim.o.writebackup = false -- :h backup-table
 
 require("lazy").setup({
 	spec = {
