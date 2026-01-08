@@ -21,6 +21,7 @@ vim.o.number = true
 vim.o.list = true
 vim.o.listchars = "tab:▸ ,trail:·,precedes:◀,extends:▶,nbsp:␣"
 vim.o.wrap = false
+vim.o.colorcolumn = "80"
 
 require("lazy").setup({
 	spec = {
