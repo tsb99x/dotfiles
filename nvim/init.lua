@@ -27,6 +27,7 @@ vim.o.writebackup = false -- :h backup-table
 
 require("lazy").setup({
 	spec = {
+		-- to list all available parsers use :TSModuleInfo
 		{
 			"nvim-treesitter/nvim-treesitter",
 			branch = "master",
