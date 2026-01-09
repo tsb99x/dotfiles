@@ -38,6 +38,8 @@ require("lazy").setup({
 				ensure_installed = {
 					"vimdoc",
 					"lua",
+					"c",
+					"python",
 				},
 			},
 			config = function(_, opts)
