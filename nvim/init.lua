@@ -40,6 +40,8 @@ require("lazy").setup({
 					"lua",
 					"c",
 					"python",
+					"markdown",
+					"markdown_inline",
 				},
 			},
 			config = function(_, opts)
