@@ -25,6 +25,8 @@ vim.o.colorcolumn = "80"
 vim.o.ignorecase = true
 vim.o.writebackup = false -- :h backup-table
 
+vim.opt.clipboard:append("unnamedplus") -- :h clipboard
+
 require("lazy").setup({
 	spec = {
 		-- to list all available parsers use :TSModuleInfo
