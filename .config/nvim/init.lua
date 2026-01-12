@@ -44,6 +44,7 @@ require("lazy").setup({
 					"python",
 					"markdown",
 					"markdown_inline",
+					"bash",
 				},
 			},
 			config = function(_, opts)
