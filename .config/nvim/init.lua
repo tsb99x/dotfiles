@@ -24,6 +24,7 @@ vim.o.wrap = false
 vim.o.colorcolumn = "80"
 vim.o.ignorecase = true
 vim.o.writebackup = false -- :h backup-table
+vim.o.relativenumber = true
 
 -- wl-copy is preferred: $ sudo apt install wl-clipboard
 vim.opt.clipboard:append("unnamedplus") -- :h clipboard
