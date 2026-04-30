@@ -42,13 +42,14 @@ require("lazy").setup({
 			opts = {
 				highlight = { enable = true },
 				ensure_installed = {
-					"vimdoc",
-					"lua",
+					"bash",
 					"c",
-					"python",
+					"lua",
 					"markdown",
 					"markdown_inline",
-					"bash",
+					"python",
+					"vimdoc",
+					"xml",
 				},
 			},
 			config = function(_, opts)
