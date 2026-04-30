@@ -97,9 +97,16 @@ require("lazy").setup({
 			version = "2.5.0",
 			config = function()
 				local lspconfig = require("lspconfig")
-				lspconfig.basedpyright.setup({})
-				lspconfig.lua_ls.setup({})
-				lspconfig.clangd.setup({})
+				lspconfig.basedpyright.setup({}) -- basedpyright
+				lspconfig.lua_ls.setup({}) -- lua-language-server
+				lspconfig.clangd.setup({}) -- clangd
+				lspconfig.ltex_plus.setup({ -- ltex-ls-plus
+					settings = {
+						ltex = {
+							language = "ru-RU",
+						},
+					},
+				})
 			end,
 		},
 		{
