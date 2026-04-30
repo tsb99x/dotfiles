@@ -68,7 +68,12 @@ require("lazy").setup({
 			dependencies = { "nvim-tree/nvim-web-devicons" },
 			opts = {},
 		},
-		{ "lewis6991/gitsigns.nvim" },
+		{
+			"lewis6991/gitsigns.nvim",
+			opts = {
+				numhl = true,
+			},
+		},
 		{
 			"nvim-telescope/telescope.nvim",
 			tag = "v0.2.0",
