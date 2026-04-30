@@ -78,6 +78,7 @@ require("lazy").setup({
 				{ "<leader>fg", "<Cmd>Telescope live_grep<CR>", desc = "Telescope live grep" },
 				{ "<leader>fb", "<Cmd>Telescope buffers<CR>", desc = "Telescope buffers" },
 				{ "<leader>fh", "<Cmd>Telescope help_tags<CR>", desc = "Telescope help_tags" },
+				{ "<leader>fd", "<Cmd>Telescope diagnostics<CR>", desc = "Telescope diagnostics" },
 			},
 		},
 		{
