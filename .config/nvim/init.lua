@@ -50,6 +50,7 @@ require("lazy").setup({
 					"python",
 					"vimdoc",
 					"xml",
+					"javascript",
 				},
 			},
 			config = function(_, opts)
@@ -103,10 +104,12 @@ require("lazy").setup({
 			"neovim/nvim-lspconfig",
 			version = "2.5.0",
 			config = function()
+				-- see :help lspconfig-all
 				local lspconfig = require("lspconfig")
 				lspconfig.basedpyright.setup({}) -- basedpyright
 				lspconfig.lua_ls.setup({}) -- lua-language-server
 				lspconfig.clangd.setup({}) -- clangd
+				lspconfig.vtsls.setup({}) -- vtsls
 				lspconfig.ltex_plus.setup({ -- ltex-ls-plus
 					settings = {
 						ltex = {
