@@ -51,6 +51,8 @@ require("lazy").setup({
 					"vimdoc",
 					"xml",
 					"javascript",
+					"haskell",
+					-- "make", -- I do not like this one!
 				},
 			},
 			config = function(_, opts)
@@ -124,11 +126,14 @@ require("lazy").setup({
 			config = function()
 				local lint = require("lint")
 
+				-- see https://github.com/mfussenegger/nvim-lint#available-linters
+				-- use := vim.bo.filetype to get ft
 				lint.linters_by_ft = {
 					html = { "htmlhint" },
 					dockerfile = { "hadolint" },
 					sh = { "shellcheck" },
 					bash = { "shellcheck" },
+					make = { "mbake" },
 				}
 
 				vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {
@@ -160,9 +165,12 @@ require("lazy").setup({
 		{
 			"stevearc/conform.nvim",
 			opts = {
+				-- see :help conform-formatters
+				-- use := vim.bo.filetype to get ft
 				formatters_by_ft = {
 					lua = { "stylua" },
 					python = { "isort", "black" },
+					make = { "bake" },
 				},
 				format_on_save = {
 					timeout_ms = 500,
