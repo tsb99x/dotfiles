@@ -177,6 +177,9 @@ require("lazy").setup({
 					python = { "isort", "black" },
 					make = { "bake" },
 					clojure = { "cljfmt" },
+					html = { "prettier" },
+					css = { "prettier" },
+					javascript = { "prettier" },
 				},
 				format_on_save = {
 					timeout_ms = 500,
