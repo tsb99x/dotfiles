@@ -52,6 +52,9 @@ require("lazy").setup({
 					"xml",
 					"javascript",
 					"haskell",
+					"java",
+					"json",
+					"clojure",
 					-- "make", -- I do not like this one!
 				},
 			},
@@ -107,11 +110,13 @@ require("lazy").setup({
 			version = "2.5.0",
 			config = function()
 				-- see :help lspconfig-all
+				-- Mason packages are named in comments
 				local lspconfig = require("lspconfig")
 				lspconfig.basedpyright.setup({}) -- basedpyright
 				lspconfig.lua_ls.setup({}) -- lua-language-server
 				lspconfig.clangd.setup({}) -- clangd
 				lspconfig.vtsls.setup({}) -- vtsls
+				lspconfig.clojure_lsp.setup({}) -- clojure-lsp
 				lspconfig.ltex_plus.setup({ -- ltex-ls-plus
 					settings = {
 						ltex = {
@@ -171,6 +176,7 @@ require("lazy").setup({
 					lua = { "stylua" },
 					python = { "isort", "black" },
 					make = { "bake" },
+					clojure = { "cljfmt" },
 				},
 				format_on_save = {
 					timeout_ms = 500,
