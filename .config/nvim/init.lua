@@ -55,6 +55,7 @@ require("lazy").setup({
 					"java",
 					"json",
 					"clojure",
+					"sql",
 					-- "make", -- I do not like this one!
 				},
 			},
@@ -139,6 +140,7 @@ require("lazy").setup({
 					sh = { "shellcheck" },
 					bash = { "shellcheck" },
 					make = { "mbake" },
+					sql = { "sqruff" },
 				}
 
 				vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {
@@ -180,6 +182,7 @@ require("lazy").setup({
 					html = { "prettier" },
 					css = { "prettier" },
 					javascript = { "prettier" },
+					sql = { "sqruff" },
 				},
 				format_on_save = {
 					timeout_ms = 500,
