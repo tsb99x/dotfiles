@@ -122,6 +122,7 @@ require("lazy").setup({
 				lspconfig.clangd.setup({}) -- clangd
 				lspconfig.vtsls.setup({}) -- vtsls
 				lspconfig.clojure_lsp.setup({}) -- clojure-lsp
+				lspconfig.lemminx.setup({}) -- lemminx
 				lspconfig.gopls.setup({}) -- gopls
 				lspconfig.neocmake.setup({ -- neocmakelsp
 					cmd = { "neocmakelsp", "stdio" },
