@@ -57,6 +57,8 @@ require("lazy").setup({
 					"json",
 					"clojure",
 					"sql",
+					"go",
+					"gomod",
 					-- "make", -- I do not like this one!
 				},
 			},
@@ -119,6 +121,7 @@ require("lazy").setup({
 				lspconfig.clangd.setup({}) -- clangd
 				lspconfig.vtsls.setup({}) -- vtsls
 				lspconfig.clojure_lsp.setup({}) -- clojure-lsp
+				lspconfig.gopls.setup({}) -- gopls
 				lspconfig.neocmake.setup({ -- neocmakelsp
 					cmd = { "neocmakelsp", "stdio" },
 				})
