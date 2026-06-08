@@ -52,6 +52,7 @@ require("lazy").setup({
 					"vimdoc",
 					"xml",
 					"javascript",
+					"typescript",
 					"haskell",
 					"java",
 					"json",
@@ -189,6 +190,7 @@ require("lazy").setup({
 					html = { "prettier" },
 					css = { "prettier" },
 					javascript = { "prettier" },
+					typescript = { "prettier" },
 					sql = { "sqruff" },
 				},
 				format_on_save = {
