@@ -44,6 +44,7 @@ require("lazy").setup({
 				ensure_installed = {
 					"bash",
 					"c",
+					"cmake",
 					"lua",
 					"markdown",
 					"markdown_inline",
@@ -118,6 +119,9 @@ require("lazy").setup({
 				lspconfig.clangd.setup({}) -- clangd
 				lspconfig.vtsls.setup({}) -- vtsls
 				lspconfig.clojure_lsp.setup({}) -- clojure-lsp
+				lspconfig.neocmake.setup({ -- neocmakelsp
+					cmd = { "neocmakelsp", "stdio" },
+				})
 				lspconfig.ltex_plus.setup({ -- ltex-ls-plus
 					settings = {
 						ltex = {
